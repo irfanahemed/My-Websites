@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <style>
+            h1 {
+                text-align: center;
+            }
+        </style>
+        <title>Payment Form</title>
+        
+    <body>
+        <form action="">
+            <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; background-color: blue; color: blanchedalmond;"><b>Payment Form</b></h1>
+        <p>Required fields are followed by *</p>
+            <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Contact Information</h2>
+        <p>Name : * <input type="text" name="name" required></p>
+        <fieldset>
+            <legend>* Gender </legend>
+        <p>
+            Male <input type="radio" name="gender" id="male"> Female <input type="radio">
+        </p>
+    </fieldset>
+    <p>
+        Address <textarea name="Address" id="Address" cols="50" rows="4"></textarea>
+    </p>
+    <p>
+        Email : * <input type="email" name="email" id="email" required>
+    </p>
+    <p>
+        Pincode : * <input type="number" name="Pincode" id="Pincode" required>
+    </p>
+    <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Payment Information</h2>
+    <p>
+        Card Type : * <select name="card_type" id="card_type" required>
+    <option value="">--Select Your Card Type--</option>
+    <option value="Visa">VISA</option>
+    <option value="Mastercard">Mastercard</option>
+    <option value="Rupay">Rupay</option>
+    </select>    
+</p>
+<p>
+    Card Number : * <input type="number" name="card_number" id="card_number" required>
+</p>
+<p>
+    Expiration Date : *<input type="date" name="exp_date" id="exp_date" required>
+</p>
+<p>
+    CVV : * <input type="password" name="cvv" id="cvv" required>
+</p>
+<input type="submit" value="PAY NOW">
+        </form>
+    </body>
+</html>

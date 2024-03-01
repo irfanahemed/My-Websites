@@ -1,52 +1,65 @@
-<html>
-    <head>
-        <style>
-            h1 {
-                text-align: center;
-            }
-        </style>
-        <title>Payment Form</title>
-        
-    <body>
-        <form action="">
-            <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; background-color: blue; color: blanchedalmond;"><b>Payment Form</b></h1>
-        <p>Required fields are followed by *</p>
-            <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Contact Information</h2>
-        <p>Name : * <input type="text" name="name" required></p>
-        <fieldset>
-            <legend>* Gender </legend>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200">
+    <link rel="stylesheet" href="paymentform.css">
+    <title>Payment Form</title>
+</head>
+<body>
+    <div class="container">
+    <h1>Payment Form</h1>
+    <form action="get">
+        <h2>User Information</h2>
         <p>
-            Male <input type="radio" name="gender" id="male"> Female <input type="radio">
+            Name <input type="text" required name="name" placeholder="Gandu Naba">
         </p>
-    </fieldset>
-    <p>
-        Address <textarea name="Address" id="Address" cols="50" rows="4"></textarea>
-    </p>
-    <p>
-        Email : * <input type="email" name="email" id="email" required>
-    </p>
-    <p>
-        Pincode : * <input type="number" name="Pincode" id="Pincode" required>
-    </p>
-    <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Payment Information</h2>
-    <p>
-        Card Type : * <select name="card_type" id="card_type" required>
-    <option value="">--Select Your Card Type--</option>
-    <option value="Visa">VISA</option>
-    <option value="Mastercard">Mastercard</option>
-    <option value="Rupay">Rupay</option>
-    </select>    
-</p>
-<p>
-    Card Number : * <input type="number" name="card_number" id="card_number" required>
-</p>
-<p>
-    Expiration Date : *<input type="date" name="exp_date" id="exp_date" required>
-</p>
-<p>
-    CVV : * <input type="password" name="cvv" id="cvv" required>
-</p>
-<input type="submit" value="PAY NOW">
-        </form>
-    </body>
+        <p>
+            <fieldset>
+                <legend>Gender</legend>
+                Male <input type="radio" name="gender" id="male"> Female <input type="radio" name="gender" id="female">
+            </fieldset>
+        </p>
+        <p>
+            Address 
+            <textarea placeholder="Enter Your Address" name="Address" id="address" cols="60" rows="12"></textarea>
+        </p>
+        <p>
+            Email <input type="email" name="email" id="email" placeholder="jhonfighter@gmail.com">
+        </p>
+        <p>
+            Pincode <input type="number" name="Pincode" id="number" placeholder="784101">
+        </p>
+        <p class="card-type-container">
+            <div class="card-images">
+                <img src="image/70602_visa_straight_icon.png" alt="Visa Card">
+                <img src="image/70593_mastercard_curved_icon.png" alt="Master Card">
+                <img src="image/701549_bank_card_payment_rupay_icon.png" alt="Rupay Card">
+                <img src="image/american_express.png" alt="American Express Card">
+                <img src="image/70605_discover_curved_icon.png" alt="Discover Card">
+            </div>
+            <select name="card_type" id="card_type" required>
+                <option value="">Select Your Card Type</option>
+                <option value="Visa">Visa</option>
+                <option value="Master_card">Master Card</option>
+                <option value="Rupay">Rupay</option>
+                <option value="American_express">American Express</option>
+                <option value="Discover">Discover</option>
+            </select>
+        </p>
+        <p>
+            Card Number <input type="number" name="card_number" id="card_number" placeholder="1234567891011121" required>
+        </p>
+        <p>
+            Expiry Date <input type="date" name="expiry" id="expiry" required>
+        </p>
+        <p>
+            CVV <input type="password" name="CVV" maxlength="3" pattern="[0-9]*" id="cvv" placeholder="021" required>
+        </p>
+        <p>
+            <input type="submit" value="Pay Now">
+        </p>
+    </form>
+    </div>
+</body>
 </html>

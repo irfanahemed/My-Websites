@@ -1,0 +1,225 @@
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Inria Sans', sans-serif;
+}
+.form-container{
+    /*border: solid 1px;*/
+    transform: traslate(300px);
+    width: 365px;
+    height: 630px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 4%;
+    left: 5%;
+    background-color:white;
+    border-radius: 3px;
+    box-shadow: 0 4px 40px 0 rgba(0,0,0,0.20);
+}
+.inside-form{
+    box-sizing: border-box;
+    padding-top: 10%;
+    padding-left: 3.2%;
+}
+.trusted-img img{
+    width: 80px;
+}
+.logo img{
+    width: 20px;
+}
+.background-tab img{
+    width: 20px;
+}
+body {
+    background-color: rgb(71,110,226);
+}
+.background-tab{
+    position: absolute;
+    top: 5%;
+    left: 36%;
+    color: white;
+}
+.trusted-partner{
+    position: absolute;
+    top: 67%;
+    left: 40%;
+}
+
+label[for="lname"]{
+    padding-left: 24.6%;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.748);
+}
+
+.n-input-field{
+    display: flex;
+    gap: 1%;
+    height: 38px;
+    padding-top: 1%;
+    padding-bottom: 5%;
+}
+.input-email{
+    display: flex;
+    width: 95%;
+    height: 38px;
+}
+label[for="email-1"]{
+    position: relative;
+    bottom: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.748);
+}
+.messagediv{
+    padding-top: 4%;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.748);
+}
+.message-input{
+    display: flex;
+}
+.message-1{
+    height: 38px;
+    width: 95%;
+}
+label[for="message"]{
+    position: relative;
+    bottom: 5px;
+}
+label[for="additional-details"]{
+    position: relative;
+    bottom: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.748);
+}
+.add-details{
+    padding-top: 4%;
+}
+.add-detail-1{
+    width: 95%;
+    height: 100px;
+}
+.submit-but{
+    width: 97%;
+    height: 50px;
+}
+.submit{
+    padding-top: 3%;
+}
+
+.icon-box img{
+    display: flex;
+    width: 5%;
+    margin: 20px 20px 20px 20px;
+}
+.icon-box{
+    padding-right: 50px;
+    position: relative;
+    bottom: 7px;
+    right: 15px;
+    opacity: 60%;
+}
+.f-text{
+    font-size: smaller;
+    position: relative;
+    bottom: 94px;
+    left: 32px;
+}
+.m-text{
+    font-size: smaller;
+    position: relative;
+    bottom: 121px;
+    left: 32px;
+}
+.p-text{
+    font-size: smaller;
+    position: relative;
+    bottom: 112px;
+    left: 32px;
+}
+.map{
+    padding-bottom: 7px;
+}
+.arrow{
+    position: relative;
+    left: 665px;
+    bottom: 34px;
+    filter: invert(100%);
+}
+input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 170px;
+    height: 40px;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5);
+}
+input[type="text"].message-1{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 344px;
+    height: 40px;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5);
+}
+input[type="email"]{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 344px;
+    height: 40px;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 1px rgba(0, 0, 0, 1);
+}
+textarea{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: inset 0 0 1px rgba(0, 0, 0, 1);
+    resize: none;
+}
+input[type="submit"]{
+    color: white;
+    font-weight: bolder;
+    font-family: 'Inria Sans', sans-serif;
+    background-color: rgb(84,87,255);
+    border: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+label[for=fname]{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.748);
+}
+.trusted-img{
+    
+    filter: invert(100%);
+    position: relative;
+    right: 56px;
+}
+.trusted-partner{
+    color: rgb(255, 255, 255);
+}
+input[type="submit"]:hover {
+    background-color: #0022ff;
+}
+*{
+    margin: 0;
+}
+.space{
+    display: flex;
+    flex-direction:column;
+    row-gap: 14px;
+}
+.cont-gap{
+    position: relative;
+    top: 28px;
+}
+.line{
+    position: relative;
+    right: 6px;
+    bottom: 20px;
+}

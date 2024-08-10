@@ -11,6 +11,7 @@
             margin: 0;
             padding: 0;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -78,6 +79,13 @@
             margin-bottom: 10px;
         }
 
+        .autograph {
+            margin-top: 20px;
+            font-size: 18px;
+            font-family: 'Cursive', sans-serif;
+            color: #555;
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             .calculator {
@@ -92,6 +100,10 @@
             .button {
                 font-size: 20px;
                 padding: 15px;
+            }
+
+            .autograph {
+                font-size: 16px;
             }
         }
     </style>
@@ -123,6 +135,8 @@
             <button class="button operator" onclick="chooseOperation('+')">+</button>
         </div>
     </div>
+
+    <div class="autograph">Made by Irfan Ahmed</div>
 
     <script>
         let currentInput = '';
@@ -187,4 +201,6 @@
         function updateOperationDisplay(value, operation) {
             document.getElementById('operation-display').innerText = `${value} ${operation}`;
         }
-        </script>
+    </script>
+</body>
+</html>
